@@ -1,0 +1,168 @@
+/* google fonts (Inter) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* webikiscroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: conic-gradient(from 180deg at 50% 50.00%, #6C35AF 107.08382606506348deg, #CC75DB 177.4898386001587deg, #5137AE 319.5207667350769deg);
+}
+
+/* navbar */
+/* navbar */
+
+.nav__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 6vw;
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.link,
+.btn {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 23px;
+    transition: .3s;
+}
+
+.link:hover {
+    background: linear-gradient(155deg, #FFF 0%, rgba(255, 255, 255, 0.50) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn {
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(254, 200, 241, 0.90) 0%, rgba(237, 146, 215, 0.00) 40.39%), radial-gradient(96.63% 140.33% at 76.68% 66.67%, rgba(96, 46, 166, 0.00) 0%, rgba(201, 119, 214, 0.50) 100%);
+    background-blend-mode: overlay, normal;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10), 0px 0px 5px 0px #FFACE4 inset, 0px -1px 8px 0px #9375B6 inset;
+    padding: 8px 28px;
+}
+
+.btn:hover {
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10), 0px 0px 5px 0px #FFACE4 inset, 0px -1px 8px 0px #9375B6;
+}
+
+
+/* hero section */
+/* hero section */
+
+.hero__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 6vw;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+}
+
+.sub__heading {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: fit-content;
+    padding: 4px 8px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.50);
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.heading {
+    max-width: 500px;
+    font-family: Inter;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90px;
+    background: linear-gradient(206deg, rgba(225, 177, 255, 0.88) 0%, #5A68E8 51.04%, #CC51D6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.paragraph {
+    color: rgba(255, 255, 255, 0.60);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    max-width: 600px;
+}
+
+.hero__content .btn {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(254, 200, 241, 0.90) 0%, rgba(254, 200, 241, 0.00) 40.39%), radial-gradient(137.13% 253.39% at 76.68% 66.67%, #602EA6 0%, #C977D6 100%);
+    background-blend-mode: overlay, normal;
+    box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.40), 0px 0px 5px 0px #FFACE4 inset, 0px -1px 8px 0px #9375B6 inset;
+    position: relative;
+}
+
+.hero__content .btn::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 10px;
+    background: conic-gradient(from 180deg at 50% 50.00%, #6C35AF 107.08382606506348deg, #CC75DB 177.4898386001587deg, #5137AE 319.5207667350769deg);
+    filter: blur(17px);
+}
+.button {
+    display: flexbox;
+    padding: 10px 10px;
+    background-color: #CC75DB;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Change button color when hovered over */
+.button:hover {
+    background-color: #CC51D6;
+}
+
+/* cards section */
